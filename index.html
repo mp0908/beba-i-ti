@@ -5,7 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Beba i Ti — Fotografisanje trudnica, beba i porodica</title>
 <meta name="description" content="Fotografisanje trudnica i beba u toploj, prirodnoj atmosferi. Sačuvajte najlepše trenutke kroz autentične i emotivne fotografije.">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<!-- ── FAVICON ── -->
+<link rel="icon" href="favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -23,9 +28,11 @@
       <div class="nav-dropdown">
         <a href="portfolio.html">Portfolio</a>
         <div class="dropdown-menu">
-          <a href="portfolio.html#studio">Studio</a>
-          <a href="portfolio.html#dom">U vašem domu</a>
-          <a href="portfolio.html#hrast">Začarani hrast</a>
+          <div class="dropdown-menu-inner">
+            <a href="portfolio.html#studio">Studio</a>
+            <a href="portfolio.html#dom">U vašem domu</a>
+            <a href="portfolio.html#hrast">Začarani hrast</a>
+          </div>
         </div>
       </div>
       <a href="#pitanja">Pitanja</a>
@@ -33,7 +40,11 @@
     </nav>
 
     <button class="menu-toggle" id="menuToggle" aria-label="Otvori meni" aria-expanded="false" aria-controls="mobileNav">
-      <span></span><span></span><span></span>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6" class="menu-line menu-line-1"></line>
+        <line x1="3" y1="12" x2="21" y2="12" class="menu-line menu-line-2"></line>
+        <line x1="3" y1="18" x2="21" y2="18" class="menu-line menu-line-3"></line>
+      </svg>
     </button>
   </div>
 </header>
@@ -58,12 +69,6 @@
 
   <!-- ── HERO ── -->
   <section class="hero" id="hero">
-    <div class="hero-bg">
-      <img src="hero.jpg" alt="Beba i Ti — trudničke fotografije">
-    </div>
-    <div class="hero-overlay"></div>
-    <div class="hero-grain"></div>
-
     <div class="hero-content">
       <div class="hero-eyebrow">
         <div class="hero-eyebrow-line"></div>
@@ -72,8 +77,8 @@
       <h1 class="hero-title">
         Uspomene<br>
         <em>pune ljubavi.</em>
-        <span class="hero-title-small">Fotografije koje govore srcem.</span>
       </h1>
+      <p class="hero-tagline">Fotografije koje čuvaju toplinu svakog trenutka zauvek.</p>
       <div class="hero-actions">
         <a href="#kontakt" class="hero-cta">
           Rezervišite termin
@@ -81,16 +86,6 @@
         </a>
         <a href="portfolio.html" class="hero-cta-secondary">Pogledajte portfolio</a>
       </div>
-    </div>
-
-    <div class="hero-scroll">
-      <span class="hero-scroll-label">Skroluj</span>
-      <div class="hero-scroll-line"></div>
-    </div>
-
-    <div class="hero-info">
-      <span class="hero-info-item">Studio · Dom · Priroda</span>
-      <span class="hero-info-item">Srbija</span>
     </div>
   </section>
 
@@ -111,6 +106,7 @@
   <!-- ── PORTFOLIO PREVIEW ── -->
   <section class="portfolio-preview" id="portfolio-preview">
     <div class="portfolio-preview-head reveal">
+      <span class="portfolio-preview-label">02 — Galerija</span>
       <h2>
         Odabrane<br>
         <em style="font-family:'Playfair Display',serif;font-style:italic;">fotografije</em>
@@ -118,55 +114,52 @@
       <a href="portfolio.html" class="see-all">Pogledajte sve →</a>
     </div>
 
-    <div class="photo-strip" id="photoStrip">
+    <div class="showcase-grid" id="photoStrip">
 
-      <div class="strip-photo reveal">
+      <a href="portfolio.html#studio" class="showcase-tile showcase-feature reveal">
         <img src="Studio - Beba i Ti/imgi_1_fotografisanjetrudnicastudio18.jpg" alt="Studio fotografija" loading="lazy"
-             onerror="this.closest('.strip-photo').style.display='none'">
-        <span class="strip-label">Studio</span>
-      </div>
+             onerror="this.closest('.showcase-tile').style.display='none'">
+        <span class="showcase-caption">
+          <span class="showcase-caption-n">01</span>
+          <span class="showcase-caption-label">Studio</span>
+        </span>
+      </a>
 
-      <div class="strip-photo reveal">
+      <a href="portfolio.html#dom" class="showcase-tile reveal">
         <img src="U vašem domu - Beba i Ti/imgi_1_fotografisanjebeba4.jpg" alt="Fotografija u domu" loading="lazy"
-             onerror="this.closest('.strip-photo').style.display='none'">
-        <span class="strip-label">Dom</span>
-      </div>
+             onerror="this.closest('.showcase-tile').style.display='none'">
+        <span class="showcase-caption">
+          <span class="showcase-caption-n">02</span>
+          <span class="showcase-caption-label">Dom</span>
+        </span>
+      </a>
 
-      <div class="strip-photo reveal">
-        <img src="Studio - Beba i Ti/imgi_2_fotografisanjetrudnicastudio14.jpg" alt="Studio fotografija" loading="lazy"
-             onerror="this.closest('.strip-photo').style.display='none'">
-        <span class="strip-label">Studio</span>
-      </div>
-
-      <div class="strip-photo reveal">
+      <a href="portfolio.html#hrast" class="showcase-tile reveal">
         <img src="Začarani Hrast - Beba i Ti/imgi_1_zacaranihrast1.jpg" alt="Začarani hrast fotografija" loading="lazy"
-             onerror="this.closest('.strip-photo').style.display='none'">
-        <span class="strip-label">Začarani hrast</span>
-      </div>
+             onerror="this.closest('.showcase-tile').style.display='none'">
+        <span class="showcase-caption">
+          <span class="showcase-caption-n">03</span>
+          <span class="showcase-caption-label">Začarani hrast</span>
+        </span>
+      </a>
 
-      <div class="strip-photo reveal">
-        <img src="U vašem domu - Beba i Ti/imgi_17_fotografisanjebeba13.jpg" alt="Fotografija u domu" loading="lazy"
-             onerror="this.closest('.strip-photo').style.display='none'">
-        <span class="strip-label">Dom</span>
-      </div>
-
-      <div class="strip-photo reveal">
-        <img src="Studio - Beba i Ti/imgi_21_fotografisanjetrudnicastudio6.jpg" alt="Studio fotografija" loading="lazy"
-             onerror="this.closest('.strip-photo').style.display='none'">
-        <span class="strip-label">Studio</span>
-      </div>
-
-      <div class="strip-photo reveal">
-        <img src="Začarani Hrast - Beba i Ti/imgi_5_zacaranihrast4.jpg" alt="Začarani hrast fotografija" loading="lazy"
-             onerror="this.closest('.strip-photo').style.display='none'">
-        <span class="strip-label">Začarani hrast</span>
-      </div>
-
-      <div class="strip-photo reveal">
+      <a href="portfolio.html#dom" class="showcase-tile reveal">
         <img src="U vašem domu - Beba i Ti/imgi_3_fotografisanjeporodice1.jpg" alt="Porodična fotografija" loading="lazy"
-             onerror="this.closest('.strip-photo').style.display='none'">
-        <span class="strip-label">Dom</span>
-      </div>
+             onerror="this.closest('.showcase-tile').style.display='none'">
+        <span class="showcase-caption">
+          <span class="showcase-caption-n">04</span>
+          <span class="showcase-caption-label">Porodica</span>
+        </span>
+      </a>
+
+      <a href="portfolio.html#studio" class="showcase-tile reveal">
+        <img src="Studio - Beba i Ti/imgi_21_fotografisanjetrudnicastudio6.jpg" alt="Studio fotografija" loading="lazy"
+             onerror="this.closest('.showcase-tile').style.display='none'">
+        <span class="showcase-caption">
+          <span class="showcase-caption-n">05</span>
+          <span class="showcase-caption-label">Studio</span>
+        </span>
+      </a>
 
     </div>
 
@@ -214,7 +207,7 @@
           <span class="faq-toggle" aria-hidden="true"></span>
         </button>
         <div class="faq-body">
-          <p>Trudnički set traje oko 1 sat. Fotografisanje bebe može potrajati 2–3 sata, jer radimo u ritmu bebe — uz pauze za hranjenje, presvlačenje i maženje.</p>
+          <p>Trudnički set traje oko 1 sat. Fotografisanje bebe može potrajati 2–3 sata, jer radim u ritmu bebe — uz pauze za hranjenje, presvlačenje i maženje.</p>
         </div>
       </div>
 
@@ -278,61 +271,52 @@
 
   <!-- ── CONTACT ── -->
   <section class="contact-section" id="kontakt">
-    <span class="label">Rezervacija</span>
-    <h2 class="reveal">Sačuvajmo vaše<br><em>najlepše trenutke.</em></h2>
-    <p class="reveal">Pošaljite mi poruku i zajedno ćemo isplanirati savršen termin. Uz savet o pripremi, odeći i rekvizitima.</p>
 
-    <!-- Contact Form -->
-    <form class="contact-form reveal" id="contactForm" novalidate>
-      <div class="form-row">
-        <div class="form-group">
-          <label class="form-label" for="cf-name">Vaše ime</label>
-          <input class="form-input" type="text" id="cf-name" name="name" placeholder="Ana Marković" required>
+    <div class="contact-head">
+      <div class="contact-head-left reveal">
+        <span class="label">Rezervacija</span>
+        <h2>Sačuvajmo vaše<br><em>najlepše trenutke.</em></h2>
+      </div>
+      <div class="contact-head-right reveal">
+        <p>Pošaljite mi poruku i zajedno ćemo isplanirati savršen termin — uz savet o pripremi, odeći i rekvizitima.</p>
+        <div class="contact-channels">
+          <div class="contact-channel">
+            <span class="contact-channel-label">E-mail</span>
+            <a href="mailto:foto.bebaiti@gmail.com">foto.bebaiti@gmail.com</a>
+          </div>
+          <div class="contact-channel">
+            <span class="contact-channel-label">Instagram</span>
+            <a href="https://www.instagram.com/beba.i.ti/" target="_blank" rel="noopener">@beba.i.ti</a>
+          </div>
         </div>
-        <div class="form-group">
-          <label class="form-label" for="cf-phone">Telefon</label>
-          <input class="form-input" type="tel" id="cf-phone" name="phone" placeholder="+381 60 123 4567">
-        </div>
-      </div>
-      <div class="form-group">
-        <label class="form-label" for="cf-email">E-mail adresa</label>
-        <input class="form-input" type="email" id="cf-email" name="email" placeholder="ana@email.com" required>
-      </div>
-      <div class="form-group">
-        <label class="form-label" for="cf-service">Vrsta fotografisanja</label>
-        <input class="form-input" type="text" id="cf-service" name="service" placeholder="Trudnička / Novorođenče / Porodica / Začarani hrast…">
-      </div>
-      <div class="form-group">
-        <label class="form-label" for="cf-message">Poruka</label>
-        <textarea class="form-textarea" id="cf-message" name="message" placeholder="Recite mi nešto o sebi, željenom terminu ili posebnim željama…"></textarea>
-      </div>
-      <button type="submit" class="form-submit">
-        Pošaljite poruku
-        <span>→</span>
-      </button>
-    </form>
-
-    <div class="contact-divider"></div>
-
-    <div class="contact-links reveal">
-      <div class="contact-item">
-        <span class="label">E-mail</span>
-        <a href="mailto:foto.bebaiti@gmail.com">foto.bebaiti@gmail.com</a>
-      </div>
-      <div class="contact-item">
-        <span class="label">Instagram</span>
-        <a href="https://www.instagram.com/beba.i.ti/" target="_blank" rel="noopener">@beba.i.ti</a>
       </div>
     </div>
+
   </section>
 
-</main>
 
-<!-- ── FOOTER ── -->
 <footer class="site-footer">
-  <a href="#hero" class="footer-logo">♥ Beba i Ti</a>
-  <p class="footer-copy">© <span id="year"></span> Beba i Ti. Sva prava zadržana.</p>
-  <button id="toTop" class="to-top" aria-label="Na vrh strane">↑</button>
+  <div class="footer-inner">
+
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#hero" class="footer-logo">♥ Beba i Ti</a>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigacija">
+        <a href="#o-meni">O meni</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="#pitanja">Pitanja</a>
+        <a href="mailto:foto.bebaiti@gmail.com">E-mail</a>
+        <a href="https://www.instagram.com/beba.i.ti/" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© <span id="year"></span> Beba i Ti. Sva prava zadržana.</p>
+      <button id="toTop" class="to-top" aria-label="Na vrh strane">↑</button>
+    </div>
+
+  </div>
 </footer>
 
 <!-- ── LIGHTBOX ── -->
