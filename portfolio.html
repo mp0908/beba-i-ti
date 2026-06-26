@@ -3,8 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- ── PRIMARY SEO ── -->
 <title>Portfolio | Beba i Ti — Fotografije trudnica, beba i porodica</title>
 <meta name="description" content="Kompletna galerija fotografija trudnica, novorođenčadi i porodica. Studio, vaš dom i Začarani hrast u Vrdniku — pogledajte ceo portfolio fotografa Beba i Ti.">
 <meta name="keywords" content="portfolio fotograf, fotografije trudnica, fotografije beba, newborn galerija, porodične fotografije, Začarani hrast Vrdnik, fotograf Ruma">
@@ -12,8 +10,6 @@
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://www.bebaiti.rs/portfolio.html">
 <meta name="theme-color" content="#F7F6F2">
-
-<!-- ── OPEN GRAPH ── -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Beba i Ti">
 <meta property="og:title" content="Portfolio | Beba i Ti — Fotografije trudnica, beba i porodica">
@@ -23,22 +19,15 @@
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://www.bebaiti.rs/portfolio.html">
 <meta property="og:locale" content="sr_RS">
-
-<!-- ── TWITTER CARD ── -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Portfolio | Beba i Ti">
 <meta name="twitter:description" content="Galerija fotografija trudnica, novorođenčadi i porodica.">
 <meta name="twitter:image" content="https://www.bebaiti.rs/og-image.jpg">
-
-<!-- ── FAVICON ── -->
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-
-<!-- ── PRECONNECT / FONTS ── -->
+<link rel="icon" href="favicon/favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="css/style.css">
-
-<!-- ── STRUCTURED DATA: Breadcrumb + ImageGallery ── -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -47,15 +36,6 @@
     { "@type": "ListItem", "position": 1, "name": "Početna", "item": "https://www.bebaiti.rs/" },
     { "@type": "ListItem", "position": 2, "name": "Portfolio", "item": "https://www.bebaiti.rs/portfolio.html" }
   ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ImageGallery",
-  "name": "Portfolio — Beba i Ti",
-  "description": "Galerija fotografija trudnica, novorođenčadi i porodica u studiju, domu i na Začaranom hrastu u Vrdniku.",
-  "url": "https://www.bebaiti.rs/portfolio.html"
 }
 </script>
 </head>
@@ -72,21 +52,28 @@
     </a>
 
     <nav class="main-nav" aria-label="Glavna navigacija">
-      <a href="index.html#o-meni">O Nama</a>
+      <a href="index.html#o-meni">O Nama </a>
       <div class="nav-dropdown">
         <a href="portfolio.html" class="active">Portfolio</a>
         <div class="dropdown-menu">
-          <a href="#studio">Studio</a>
-          <a href="#dom">U vašem domu</a>
-          <a href="#hrast">Začarani hrast</a>
+          <div class="dropdown-menu-inner">
+            <a href="#studio">Studio</a>
+            <a href="#dom">U vašem domu</a>
+            <a href="#hrast">Začarani hrast</a>
+          </div>
         </div>
       </div>
       <a href="index.html#pitanja">Pitanja</a>
       <a href="index.html#kontakt" class="nav-cta">Kontakt</a>
     </nav>
 
+    <!-- ── SVG hamburger — identičan kao na index.html ── -->
     <button class="menu-toggle" id="menuToggle" aria-label="Otvori meni" aria-expanded="false" aria-controls="mobileNav">
-      <span></span><span></span><span></span>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6" class="menu-line menu-line-1"></line>
+        <line x1="3" y1="12" x2="21" y2="12" class="menu-line menu-line-2"></line>
+        <line x1="3" y1="18" x2="21" y2="18" class="menu-line menu-line-3"></line>
+      </svg>
     </button>
   </div>
 </header>
@@ -94,7 +81,7 @@
 <!-- ── MOBILE NAV ── -->
 <div class="mobile-nav" id="mobileNav">
   <nav aria-label="Mobilna navigacija">
-    <a href="index.html#o-meni">O meni</a>
+    <a href="index.html#o-meni">O Nama</a>
     <a href="#studio">Studio</a>
     <a href="#dom">U vašem domu</a>
     <a href="#hrast">Začarani hrast</a>
@@ -132,7 +119,6 @@
       <p>Jednostavne, čiste i bezvremenske fotografije. Svaka nosi trag jednog posebnog trenutka.</p>
     </div>
     <div class="gallery-grid" id="grid-studio">
-
       <figure><img src="Studio - Beba i Ti/imgi_1_fotografisanjetrudnicastudio18.jpg" alt="Trudnička fotografija u studiju" loading="lazy" width="800" height="1000"><span class="fig-num">001</span></figure>
       <figure><img src="Studio - Beba i Ti/imgi_2_fotografisanjetrudnicastudio14.jpg" alt="Trudnička fotografija u studiju" loading="lazy" width="800" height="1000"><span class="fig-num">002</span></figure>
       <figure><img src="Studio - Beba i Ti/imgi_3_fotografisanjetrudnicastudio1.jpg" alt="Trudnička fotografija u studiju" loading="lazy" width="800" height="1000"><span class="fig-num">003</span></figure>
@@ -163,7 +149,6 @@
       <figure><img src="Studio - Beba i Ti/imgi_28_fotografisanjetrudnicastudio13.jpg" alt="Trudnička fotografija u studiju" loading="lazy" width="800" height="1000"><span class="fig-num">028</span></figure>
       <figure><img src="Studio - Beba i Ti/imgi_29_fotografisanjetrudnicastudio10.jpg" alt="Trudnička fotografija u studiju" loading="lazy" width="800" height="1000"><span class="fig-num">029</span></figure>
       <figure><img src="Studio - Beba i Ti/imgi_30_fotografisanjetrudnicastudio16.jpg" alt="Trudnička fotografija u studiju" loading="lazy" width="800" height="1000"><span class="fig-num">030</span></figure>
-
     </div>
   </section>
 
@@ -174,7 +159,6 @@
       <p>Vaš dom je mesto gde se beba i porodica osećaju sigurno, opušteno i prirodno.</p>
     </div>
     <div class="gallery-grid" id="grid-dom">
-
       <figure><img src="U vašem domu - Beba i Ti/imgi_1_fotografisanjebeba4.jpg" alt="Fotografisanje bebe u domu" loading="lazy" width="800" height="1000"><span class="fig-num">001</span></figure>
       <figure><img src="U vašem domu - Beba i Ti/imgi_2_fotografisanjetrudnica.jpg" alt="Fotografisanje trudnice u domu" loading="lazy" width="800" height="1000"><span class="fig-num">002</span></figure>
       <figure><img src="U vašem domu - Beba i Ti/imgi_3_fotografisanjeporodice1.jpg" alt="Porodična fotografija" loading="lazy" width="800" height="1000"><span class="fig-num">003</span></figure>
@@ -212,7 +196,6 @@
       <figure><img src="U vašem domu - Beba i Ti/imgi_35_fotografisanjebeba-scaled.jpg" alt="Fotografisanje bebe" loading="lazy" width="800" height="1000"><span class="fig-num">035</span></figure>
       <figure><img src="U vašem domu - Beba i Ti/imgi_36_fotografisanjebeba17.jpg" alt="Fotografisanje bebe" loading="lazy" width="800" height="1000"><span class="fig-num">036</span></figure>
       <figure><img src="U vašem domu - Beba i Ti/imgi_37_fotografisanjedece1.jpg" alt="Fotografisanje dece" loading="lazy" width="800" height="1000"><span class="fig-num">037</span></figure>
-
     </div>
   </section>
 
@@ -223,7 +206,6 @@
       <p>Savršena lokacija u Vrdniku — za trudnice, parove i porodice u svako doba godine.</p>
     </div>
     <div class="gallery-grid" id="grid-hrast">
-
       <figure><img src="Začarani Hrast - Beba i Ti/imgi_1_zacaranihrast1.jpg" alt="Fotografisanje na Začaranom hrastu, Vrdnik" loading="lazy" width="800" height="1000"><span class="fig-num">001</span></figure>
       <figure><img src="Začarani Hrast - Beba i Ti/imgi_2_zacaranihrast17.jpg" alt="Fotografisanje na Začaranom hrastu, Vrdnik" loading="lazy" width="800" height="1000"><span class="fig-num">002</span></figure>
       <figure><img src="Začarani Hrast - Beba i Ti/imgi_3_zacaranihrast9.jpg" alt="Fotografisanje na Začaranom hrastu, Vrdnik" loading="lazy" width="800" height="1000"><span class="fig-num">003</span></figure>
@@ -243,7 +225,6 @@
       <figure><img src="Začarani Hrast - Beba i Ti/imgi_17_zacaranihrast16.jpg" alt="Fotografisanje na Začaranom hrastu, Vrdnik" loading="lazy" width="800" height="1000"><span class="fig-num">017</span></figure>
       <figure><img src="Začarani Hrast - Beba i Ti/imgi_18_zacaranihrast2.jpg" alt="Fotografisanje na Začaranom hrastu, Vrdnik" loading="lazy" width="800" height="1000"><span class="fig-num">018</span></figure>
       <figure><img src="Začarani Hrast - Beba i Ti/imgi_19_zacaranihrast15.jpg" alt="Fotografisanje na Začaranom hrastu, Vrdnik" loading="lazy" width="800" height="1000"><span class="fig-num">019</span></figure>
-
     </div>
   </section>
 
@@ -252,10 +233,9 @@
 <!-- ── FOOTER ── -->
 <footer class="site-footer">
   <div class="footer-inner">
-
     <div class="footer-top">
       <div class="footer-brand">
-        <a href="#hero" class="footer-logo">♥ Beba i Ti</a>
+        <a href="index.html" class="footer-logo">♥ Beba i Ti</a>
       </div>
       <nav class="footer-nav" aria-label="Footer navigacija">
         <a href="index.html#o-meni">O Nama</a>
@@ -265,14 +245,13 @@
         <a href="https://www.instagram.com/beba.i.ti/" target="_blank" rel="noopener">Instagram</a>
       </nav>
     </div>
-
     <div class="footer-bottom">
       <p class="footer-copy">© <span id="year"></span> Beba i Ti. Sva prava zadržana.</p>
       <button id="toTop" class="to-top" aria-label="Na vrh strane">↑</button>
     </div>
-
   </div>
 </footer>
+
 <!-- ── LIGHTBOX ── -->
 <div class="lightbox" id="lightbox" role="dialog" aria-label="Pregled fotografije" aria-modal="true">
   <button class="lightbox-close" id="lbClose" aria-label="Zatvori">✕</button>
